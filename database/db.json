@@ -1,0 +1,39 @@
+{
+    "destinazioni": [
+      {
+        "id": "1",
+        "titolo": "Sun Island, Maldive",
+        "locandina": "https://c4.wallpaperflare.com/wallpaper/814/135/830/5bd34a4511f16-wallpaper-preview.jpg",
+        "periodo": "dal 12 al 19 giugno",
+        "prezzo": 6500,
+        "disponibilita": true
+      },
+      {
+        "id": "2",
+        "titolo": "Ibiza, Spagna",
+        "locandina": "https://c4.wallpaperflare.com/wallpaper/129/256/938/crag-ibiza-sea-ships-wallpaper-preview.jpg",
+        "periodo": "dal 15 al 19 giugno",
+        "prezzo": 960,
+        "disponibilita": true
+      },
+      {
+        "id": "3",
+        "titolo": "Pantelleria, Italia",
+        "locandina": "https://static2.iodonna.it/wp-content/uploads/2023/07/pantelleria.jpg?v=2162941",
+        "periodo": "dal 23 al 28 giugno",
+        "prezzo": 780,
+        "disponibilita": true
+      },
+      {
+        "id": "4",
+        "titolo": "La Graciosa, Isole Canarie",
+        "locandina": "https://c1.wallpaperflare.com/preview/845/441/316/la-graciosa-island-canary-islands-mirador-del-rio.jpg",
+        "periodo": "dal 20 al 25 giugno",
+        "prezzo": 550,
+        "disponibilita": true
+      }
+
+      
+    ]
+    
+  }
