@@ -61,5 +61,4 @@ function creaCardDest(destinazione) {
         divCardBody.innerHTML += `<p class="card-text"> Periodo: Non disponibile </p>`
     }
     return card;
-
 }
