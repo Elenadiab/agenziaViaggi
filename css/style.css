@@ -129,7 +129,25 @@ main {
 #destinazioni img {
     width: 100vh;
 }
-   
+
+
+/* Prova trasformazione solo su una destinazione */
+.singolaDestinazione{
+    overflow: hidden; /* Assicura che l'immagine non esca dai bordi del contenitore */
+    width: 800px; /* Larghezza del contenitore */
+    /* height: 1080px; Altezza del contenitore */
+}
+
+.imgDestinazione {
+    overflow: hidden;
+    transform: scale(1.3); /* Modifica la scala dell'immagine al 110% del suo normale */
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida all'effetto di allontanamento */
+}
+
+.imgDestinazione:hover {
+    
+    transform: scale(1.1); /* Quando passi il mouse sopra l'immagine, aumenta ulteriormente la scala */
+}
 
 
 
