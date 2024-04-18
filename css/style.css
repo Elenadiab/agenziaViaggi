@@ -78,13 +78,13 @@ main {
 /* ------------------------------- STILE CARD ------------------------------- */
 
 
-.card {
+/* .card {
    border: 0px !important;
    padding-bottom: 3rem;
-}
+} */
 
   .card-img-top {
-    width: 100%;
+    
     height: 200px;
     object-fit: cover;
   }
@@ -98,17 +98,7 @@ main {
 
 /* --------------------------------- SPACER --------------------------------- */
 
-#spacer {
-    height: 500px;
-    background-image: url('../img/spacer-bora-bora.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 
-    background-attachment: fixed;
-    margin-bottom: 3rem;
-
-}
 
 
 /* --------------------------------- SERVIZI -------------------------------- */
@@ -224,7 +214,17 @@ main {
     }
 
 
-
+    #spacer {
+        height: 500px;
+        background-image: url('../img/spacer-bora-bora.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        background-attachment: fixed;
+        margin-bottom: 3rem;
+    
+    }
 
 
 } 
