@@ -1,5 +1,7 @@
 let rowContainer = document.querySelector("#elDestinazioniLastMin")
 
+
+
 function recuperaDestinazioni(){
     const URLdestinazioni = "http://localhost:3000/destinazioni"
 
@@ -64,11 +66,11 @@ function creaCard(destinazione) {
         const button = document.createElement('button');
         button.classList.add('btn')
         button.classList.add('btn-primary')
-        button.textContent = "Acquista"
+        button.textContent = "Si parte !"
         cardBody.appendChild(button)
 
         button.addEventListener("click", function(){
-            localStorage.setItem(destinazione.id, destinazione.titolo + " - " + destinazione.periodo + " - " + destinazione.prezzo)
+            localStorage.setItem(destinazione.id, destinazione.titolo + " - " + destinazione.periodo + " - " + destinazione.prezzo + " - " + destinazione.locandina)
         })
          
 
@@ -82,7 +84,8 @@ function creaCard(destinazione) {
 
     function creaColonna(destinazione){
     const colonna = document.createElement('div');
-    colonna.classList.add('col-3');
+    colonna.classList.add('col-lg-3');
+
 
     // Crea la card
     const card = creaCard(destinazione);

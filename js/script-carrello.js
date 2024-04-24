@@ -1,5 +1,8 @@
 let elListaRiep = document.querySelector("#listaRiep");
 let grandTotal = document.querySelector("#grandTotal");
+let imgRiep = document.querySelector('#imgRiep');
+
+
 
 console.log(localStorage);
 
@@ -16,11 +19,26 @@ function recuperaDestinazioniScelte(){
                 .then(response => {
                     destinazioneNelCarrello.push(response);
                     
+                    elListaRiep.innerHTML += `<li class='list-group-item'>${response.titolo} - ${response.prezzo} € </li>`;
                     totale += Number(response.prezzo);
-                    grandTotal.innerHTML += "Totale: " + totale + " €"
+                    grandTotal.innerHTML = "Totale: " + totale + " €"
+
+
+                    //provo a mettere l immagine
+                    let img = document.createElement('img');
+                    img.setAttribute('src', response.locandina)
+                    img.setAttribute('class','img-fluid')
+
+                    imgRiep.appendChild(img)
+
+
+            
+
                 });
 
-            elListaRiep.innerHTML += `<li class='list-group-item'> ${localStorage[key]} € </li>`;    
+            // elListaRiep.innerHTML += `<li class='list-group-item'> ${localStorage[key]} € </li>`; 
+            
+            
                
         }
     }
