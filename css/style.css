@@ -10,9 +10,6 @@ body {
 
 }
 
-main {
-    margin-top: 100px;
-}
 
 /* -------------------- STILE MENU ---------------------- */
 
@@ -23,13 +20,20 @@ main {
 }
 
 .nav-item a {
-    color: white;
+    color: whitesmoke;
 }
 
 .nav-link:hover {
     color: whitesmoke !important;
     font-weight: 700 !important;
 }
+
+.navbar-nav .nav-link:visited {
+    color: whitesmoke !important; /* Cambia il colore dei link già cliccati */
+  }
+
+
+
 
 .nav-black {
     background-color: rgb(94, 94, 94);
@@ -40,10 +44,26 @@ main {
 .nav-link.active {
     color: whitesmoke !important;
     font-weight: 700 !important;
+
 }
 
 
+/* ------------------ STILE OFFCANVAS -------------------- */
 
+
+.offcanvas-end {
+    background-color: #333 !important; /* Cambia il colore di sfondo a quello desiderato */
+}
+
+/* Cambia il colore del testo del menu */
+.offcanvas-body .nav-link {
+    color: whitesmoke; /* Cambia il colore del testo a quello desiderato */
+}
+
+/* Cambia il colore di sfondo degli elementi del menu quando sono attivi */
+.offcanvas-body .nav-item.active .nav-link {
+    background-color: #ccc; /* Cambia il colore di sfondo a quello desiderato */
+}
 
 /* ----------------- STILE SLIDER ----------------------- */
 
@@ -60,10 +80,7 @@ main {
 }
 
 
-.slide-text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
+
 
 .textwrapper {
     width: 100%; 
@@ -115,12 +132,11 @@ main {
 
 /* ------------------------------- STILE CARD ------------------------------- */
 
-   .last-minute-titile{
-    font-weight: 700;
-    font-size: 5rem;
-   }
-
    
+
+   .card {
+    border-top: 0px !important;
+   }
 
   .card-img-top {
     height: 200px;
@@ -134,6 +150,18 @@ main {
     .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.123);
+
+
+}
+
+.last-minute-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.last-minute-container h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
 }
 
 
@@ -146,22 +174,34 @@ main {
 
 
 
-.servText .btn-primary {
-    margin-top: 1rem;
-}
 
 .assicura-titolo{
-   color: #00A7E7;
-   font-weight: 600; 
-   
+    color: #00A7E7;
+    font-weight: 600; 
+    
+}
+
+.servText {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 /* ------------------------------ DESTINAZIONI ------------------------------ */
 
-#destinazioni {
-    margin-top: 6rem;
+
+.fullscreen-video {
+    
+    top: 0;
+    left: 0;
+    
+    
+    width: 100%; /* Imposta la larghezza al 80% della larghezza della finestra del browser */
+    height: auto; /* Imposta l'altezza al 45% dell'altezza della finestra del browser */
+    max-height: 100vh;
+    object-fit: cover;
 }
+
 
 #destinazioni img {
     width: 100vh;
@@ -188,7 +228,7 @@ main {
 /* ---- Small devices (landscape phones, 576px and up) --- */
 @media (min-width: 576px) {
     
-
+    
 }
 
 
@@ -199,13 +239,18 @@ main {
 
 /* ---- Large devices (desktops, 992px and up) --- */
 @media (min-width: 992px) {
+    
+    .slide-text h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
     .slide-text {
         position: absolute;
         top: 80%;
         left: 0;
         width: 100%;
     }
-
+    
     .card {
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
         transition: transform ease .5s, box-shadow ease .5s;
@@ -215,9 +260,15 @@ main {
         transform: translateY(-13px);
         box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
     }
-
-
+    
+    
     /* servizi */
+    
+    .servText .btn-primary {
+        margin-top: 1rem;
+    }
+
+    
 
     .servizio{
         display: flex;
@@ -246,8 +297,7 @@ main {
     
     
     .servImage img {
-        max-width: 50vh;
-        
+        max-width: 100vh;
     
     }
 
@@ -266,8 +316,15 @@ main {
 
     /* zoom img destinazioni  */
     .view {
-        overflow: hidden;    
+        overflow: hidden;
+       
     }
+
+    .rimpiciolisci-testo {
+        transform: scale(0.9); /* Scala il testo al 90% della dimensione originale */
+        transition: transform 0.3s ease-in-out; /* Applica una transizione fluida */
+    }
+
     
     .imgDestinazione {
         transform: scale(1); 
@@ -279,7 +336,10 @@ main {
     
     } 
     
-
+    .last-minute-titile{
+        font-weight: 700;
+        font-size: 5rem;
+       }
 
 } 
 

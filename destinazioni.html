@@ -25,7 +25,7 @@
         <!-- NAVBAR CON OFF-CANVAS -->
         
         <div class="header-wrapper fixed-top">
-          <nav class="navbar navbar-expand-lg nav-black">
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <!-- se voglio la navbar più stretta uso .container anziché .container-fluid -->
               <a class="navbar-brand" href="#">
@@ -53,9 +53,6 @@
                 aria-labelledby="offcanvasNavbarLabel"
               >
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    Menu
-                  </h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -69,7 +66,7 @@
                       <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Chi sono</a>
+                      <a class="nav-link" href="./chi-sono.html">Chi sono</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="./destinazioni.html">Destinazioni</a>
@@ -89,6 +86,14 @@
       </header>
 
 
+      <section id="hero-video-container">
+        <video autoplay muted loop class="fullscreen-video" >
+          <source  src="./img/4782135-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+
+      </section>
+
+
       <section id="destinazioni">
         
             <div class="container">
@@ -98,70 +103,70 @@
                 </div>
                 
                 <!-- Sardegna  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Sardegna.jpg" alt="Sardegna" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-1 pb-5"><img src="./img/Sardegna.jpg" alt="Sardegna" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-2 testo">
                     <h2 class="assicura-titolo">Sardegna</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
                 
                 <!-- Corsica  -->
-                    <div class="row singolaDestinazione">
-                    <div class="view col-lg-6"><img src="./img/Corsica.jpg" alt="Corsica" class="imgDestinazione img-fluid"></div>
-                    <div class="col-lg-6">
+                    <div class="row singolaDestinazione align-items-center">
+                    <div class="view col-lg-6 order-lg-2 pb-5"><img src="./img/Corsica.jpg" alt="Corsica" class="imgDestinazione img-fluid"></div>
+                    <div class="col-lg-6 order-lg-1 testo">
                       <h2 class="assicura-titolo">Corsica</h2>
                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                     </div></div>
 
 
                 <!-- Ibiza  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Ibiza.jpg" alt="Ibiza" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-1 pb-5"><img src="./img/Ibiza.jpg" alt="Ibiza" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-2 testo">
                     <h2 class="assicura-titolo">Ibiza</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
 
 
                 <!-- Tenerife  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Tenerife.jpeg" alt="Tenerife" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-2 pb-5"><img src="./img/Tenerife.jpeg" alt="Tenerife" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-1 testo">
                     <h2 class="assicura-titolo">Tenerife</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
 
 
                 <!-- Fuerte  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Fuerteventura.jpg" alt="Fuerteventura" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-1 pb-5"><img src="./img/Fuerteventura.jpg" alt="Fuerteventura" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-2 testo">
                     <h2 class="assicura-titolo">Fuerteventura</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
 
                 <!-- Lanzarote  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Lanzarote-Papagayo.webp" alt="Lanzarote" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-2 pb-5"><img src="./img/Lanzarote-Papagayo.webp" alt="Lanzarote" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-1 testo">
                     <h2 class="assicura-titolo">Lanzarote</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
 
 
                 <!-- Madeira  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Madeira.webp" alt="Madeira" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-1 pb-5"><img src="./img/Madeira.webp" alt="Madeira" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-2 testo">
                     <h2 class="assicura-titolo">Madeira</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
 
                 
                 <!-- Mikonos  -->
-                <div class="row singolaDestinazione">
-                  <div class="view col-lg-6"><img src="./img/Grecia.webp" alt="Grecia" class="imgDestinazione img-fluid"></div>
-                  <div class="col-lg-6">
+                <div class="row singolaDestinazione align-items-center">
+                  <div class="view col-lg-6 order-lg-2"><img src="./img/Grecia.webp" alt="Grecia" class="imgDestinazione img-fluid"></div>
+                  <div class="col-lg-6 order-lg-1 testo">
                     <h2 class="assicura-titolo">Mikonos</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum vel a molestiae quisquam asperiores nobis. Architecto inventore molestiae asperiores quo eum nam beatae, quasi earum minima sint aliquam provident rerum!</p>
                   </div></div>
@@ -170,22 +175,88 @@
                 
       </section>
 
+      
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                          SCRIPT PER LA NAVBAR                           -->
+      <!-- ----------------------------------------------------------------------- -->
+
+      <script>
+        window.onscroll = function() {scrollFunction()};
+      
+        function scrollFunction() {
+          var navbar = document.querySelector(".navbar");
+          var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      
+          // Aggiungi la classe "fixed" alla navbar quando raggiunge una certa posizione
+          if (scrollPosition > 650) { // Cambia 100 al punto desiderato
+            navbar.classList.add("nav-black");
+          } else {
+            navbar.classList.remove("nav-black");
+          }
+        }
+      </script>
+      
+
+
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                   SCRIPT EFFETTO TESTO RIMPICCIOLITO                    -->
+      <!-- ----------------------------------------------------------------------- -->
+
+
+
+      
+
+
+      <script>
+        // Seleziona tutte le immagini delle destinazioni
+        const imgDestinazioni = document.querySelectorAll('.imgDestinazione');
+    
+        // Itera su tutte le immagini delle destinazioni
+        imgDestinazioni.forEach(img => {
+            // Aggiungi un gestore per l'evento mouseover (passaggio del mouse sull'immagine)
+            img.addEventListener('mouseover', () => {
+                // Seleziona il blocco di testo associato all'immagine
+                const testo = img.closest('.singolaDestinazione').querySelector('.testo');
+                // Aggiungi una classe al blocco di testo per applicare l'effetto di rimpicciolimento
+                testo.classList.add('rimpiciolisci-testo');
+            });
+    
+            // Aggiungi un gestore per l'evento mouseout (uscita del mouse dall'immagine)
+            img.addEventListener('mouseout', () => {
+                // Seleziona il blocco di testo associato all'immagine
+                const testo = img.closest('.singolaDestinazione').querySelector('.testo');
+                // Rimuovi la classe che applica l'effetto di rimpicciolimento
+                testo.classList.remove('rimpiciolisci-testo');
+            });
+        });
+    </script>
+                
+
+
                 
 
                 
-
-
-                
-
-                
-
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                           SCRIPT VIDEO PLAYER                           -->
+      <!-- ----------------------------------------------------------------------- -->
 
         
 
 
 
 
+      <script>
+        // Funzione per avviare la riproduzione del video
+        function playVideo() {
+            var player = document.querySelector('.fullscreen-video');
+            player.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
 
+        // Avvia la riproduzione del video al caricamento della pagina
+        window.addEventListener('load', playVideo);
+    </script>
 
 
 

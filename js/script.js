@@ -18,8 +18,11 @@ function recuperaDestinazioni(){
 
                 }
             });
-        })
-}
+
+                
+
+        });
+};
 
 window.addEventListener("DOMContentLoaded", recuperaDestinazioni);
 
@@ -48,14 +51,13 @@ function creaCard(destinazione) {
 
     const cardText = document.createElement('p');
     cardText.classList.add('card-text');
-    // cardText.textContent = 'Prezzo Last Minute: ' + destinazione.prezzo + " €";
+    
 
     
 
     // Aggiungi gli elementi alla struttura della card
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardText);
-    // cardBody.appendChild(button);
     card.appendChild(imgTop);
     card.appendChild(cardBody);
 
@@ -99,8 +101,5 @@ function creaCard(destinazione) {
 
 
 
-    destinazioni.forEach(function(destinazione) {
-    let colonna = creaColonna(destinazione);
-    rowContainer.appendChild(colonna)
-  })
+    
 
