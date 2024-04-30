@@ -87,18 +87,21 @@
 
 
       <section id="hero-video-container">
+        <div class="video-overlay">
+        </div>
         <video autoplay muted loop class="fullscreen-video" >
           <source  src="./img/4782135-uhd_2560_1440_25fps.mp4" type="video/mp4">
         </video>
-
+        
       </section>
-
-
+      
+      
       <section id="destinazioni">
         
-            <div class="container">
-                <div class="intro-destinazioni">
-                  <h1 class="last-minute-titile">Destinazione mare</h1>
+        <div class="container">
+          <div class="intro-destinazioni">
+                  <h1 class="video-title last-minute-titile">Destinazione mare</h1>
+                  <!-- <h1 class="last-minute-titile">Destinazione mare</h1> -->
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quis blanditiis nihil assumenda quidem quam pariatur non libero quas illum tempore, officia est, ex totam saepe nostrum dolor delectus aspernatur.</p>
                 </div>
                 
@@ -257,6 +260,35 @@
         // Avvia la riproduzione del video al caricamento della pagina
         window.addEventListener('load', playVideo);
     </script>
+
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                        SCRIPT ANIMAZIONE TITOLO                         -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+  // Attiva l'animazione all'entrata del titolo
+  const videoTitle = document.querySelector('.video-title');
+  videoTitle.classList.add('enter');
+
+  // Rimuovi la classe per far scomparire il titolo dopo 2 secondi
+  setTimeout(function () {
+    videoTitle.classList.remove('enter');
+  }, 3000);
+});
+
+// Attiva l'animazione all'uscita del titolo prima di cambiare pagina
+window.addEventListener('beforeunload', function () {
+  const videoTitle = document.querySelector('.video-title');
+  videoTitle.classList.remove('enter');
+  videoTitle.classList.add('leave');
+});
+
+    </script>
+
+
 
 
 

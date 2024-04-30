@@ -19,14 +19,9 @@ body {
     width: auto;
 }
 
-.nav-item a {
-    color: whitesmoke;
-}
 
-.nav-link:hover {
-    color: whitesmoke !important;
-    font-weight: 700 !important;
-}
+
+
 
 .navbar-nav .nav-link:visited {
     color: whitesmoke !important; /* Cambia il colore dei link già cliccati */
@@ -36,9 +31,11 @@ body {
 
 
 .nav-black {
-    background-color: rgb(94, 94, 94);
-    color: white;
-    
+    background-color: rgba(212, 212, 212, 0.768);   
+}
+
+.nav-item-black a {
+    color: #333;
 }
 
 .nav-link.active {
@@ -46,6 +43,12 @@ body {
     font-weight: 700 !important;
 
 }
+
+.navbar-toggler {
+    border: none !important; /* Rimuove il bordo */
+}
+
+
 
 
 /* ------------------ STILE OFFCANVAS -------------------- */
@@ -82,12 +85,6 @@ body {
 
 
 
-.textwrapper {
-    width: 100%; 
-}
-
-
-
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -109,33 +106,41 @@ body {
   
     background: rgb(255,255,255);
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.06486344537815125) 33%, rgba(255,255,255,0.12088585434173671) 66%, rgba(255,255,255,0.26934523809523814) 100%);
+    background: linear-gradient(-135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.06486344537815125) 33%, rgba(255,255,255,0.12088585434173671) 66%, rgba(255,255,255,0.26934523809523814) 100%);
 
-    backdrop-filter: blur(20px);
-
-   
-    
+    backdrop-filter: blur(1.5px);    
       
 }
+
+
 
 
 .slide-text {
     color: rgb(59, 59, 59);
     position: absolute;
     left: 0;
-    bottom: 3rem;
-    
-   
-    
+    bottom: 3rem;   
 }
+
 
 
 /* ------------------------------- STILE CARD ------------------------------- */
 
-   
+.last-minute-container h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
 
    .card {
-    border-top: 0px !important;
+    border: 0px !important;
+   }
+
+   .card-title {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        color:#5E5E5E !important;
    }
 
   .card-img-top {
@@ -143,26 +148,35 @@ body {
     object-fit: cover;
   }
 
+  .card-text {
+    padding-bottom: 1rem !important;
+    margin-top: -5px !important;
+
+  }
+
+ 
+
     .btn-primary {
         background: #00A7E7 !important;
         border: #00A7E7 !important;
     }
     .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.123);
+    transform: translateY(-1.5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.041);
 
 
 }
 
-.last-minute-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.last-minute-titile {
+    font-weight: 800 !important;
+    font-size: 2.5rem !important;
 }
 
-.last-minute-container h1 {
-    font-weight: 800;
-    font-size: 2.5rem;
-}
+
+
+
+
+
 
 
 /* --------------------------------- SPACER --------------------------------- */
@@ -201,6 +215,8 @@ body {
     max-height: 100vh;
     object-fit: cover;
 }
+
+
 
 
 #destinazioni img {
@@ -250,19 +266,29 @@ body {
         left: 0;
         width: 100%;
     }
+
+    .last-minute-container {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    
+    }
     
     .card {
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
         transition: transform ease .5s, box-shadow ease .5s;
-        
+        margin-bottom: 10rem;
     }
     .card:hover {
         transform: translateY(-13px);
-        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.116);
     }
     
     
     /* servizi */
+
+    .zero-container {
+        padding-bottom: 5rem !important;
+    }
     
     .servText .btn-primary {
         margin-top: 1rem;
@@ -274,7 +300,7 @@ body {
         display: flex;
         align-items: center;
         column-gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         
     }
     
@@ -291,7 +317,7 @@ body {
     
     
     #servizi{
-        padding-top: 6rem;
+        padding-top: 10rem;
     }
     
     
@@ -308,10 +334,7 @@ body {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        
         background-attachment: fixed;
-        margin-bottom: 3rem;
-    
     }
 
     /* zoom img destinazioni  */
@@ -337,8 +360,9 @@ body {
     } 
     
     .last-minute-titile{
-        font-weight: 700;
-        font-size: 5rem;
+        font-weight: 700 !important;
+        font-size: 5rem !important;
+        
        }
 
 } 

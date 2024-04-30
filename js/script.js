@@ -48,22 +48,18 @@ function creaCard(destinazione) {
     const cardTitle = document.createElement('h5');
     cardTitle.classList.add('card-title');
     cardTitle.textContent = destinazione.titolo;
-
-    const cardText = document.createElement('p');
-    cardText.classList.add('card-text');
     
 
     
 
     // Aggiungi gli elementi alla struttura della card
     cardBody.appendChild(cardTitle);
-    cardBody.appendChild(cardText);
     card.appendChild(imgTop);
     card.appendChild(cardBody);
 
 
     if (destinazione.disponibilita) {
-        cardBody.innerHTML += `<p class="card-text"> Periodo: ${destinazione.periodo} </p> <p> Prezzo Last Minute:  ${destinazione.prezzo} €`
+        cardBody.innerHTML += `<p class="card-text"> Periodo: ${destinazione.periodo} <br>Prezzo Last Minute:  ${destinazione.prezzo} €</p>`
         
         const button = document.createElement('button');
         button.classList.add('btn')
